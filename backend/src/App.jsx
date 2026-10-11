@@ -161,7 +161,7 @@ function App() {
 const loadHistory = async (openHistory = true) => {
   try {
     const response = await fetch(
-  "http://127.0.0.1:8000/history",
+  "https://ai-resume-analyzer-ypnq.onrender.com/history",
   {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`
@@ -195,7 +195,7 @@ const viewPreviousAnalysis = async (analysisId) => {
     console.log("Token exists:", !!token);
 
     const response = await fetch(
-      `http://127.0.0.1:8000/history/${analysisId}`,
+      `https://ai-resume-analyzer-ypnq.onrender.com/history/${analysisId}`,
       {
         method: "GET",
         headers: {
@@ -245,7 +245,7 @@ const viewAnalysis = async (analysisId) => {
     }
 
     const response = await fetch(
-      `http://127.0.0.1:8000/history/${analysisId}`,
+      `https://ai-resume-analyzer-ypnq.onrender.com/history/${analysisId}`,
       {
         method: "GET",
         headers: {
@@ -292,7 +292,7 @@ const viewAnalysis = async (analysisId) => {
 
     try {
 
-      const skillGapResponse = await fetch("http://127.0.0.1:8000/skill-gap", {
+      const skillGapResponse = await fetch("https://ai-resume-analyzer-ypnq.onrender.com/skill-gap", {
 
         method: "POST",
 
@@ -356,7 +356,7 @@ const viewAnalysis = async (analysisId) => {
 
     try {
 
-      const response = await fetch("http://127.0.0.1:8000/generate-report", {
+      const response = await fetch("https://ai-resume-analyzer-ypnq.onrender.com/generate-report", {
 
         method: "POST",
 
@@ -454,7 +454,7 @@ const viewAnalysis = async (analysisId) => {
 
     try {
 const response = await fetch(
-  "http://127.0.0.1:8000/upload-resume",
+  "https://ai-resume-analyzer-ypnq.onrender.com/upload-resume",
   {
     method: "POST",
     headers: {
@@ -524,7 +524,7 @@ const response = await fetch(
 
     try {
 
-      const response = await fetch("http://127.0.0.1:8000/match-job", {
+      const response = await fetch("https://ai-resume-analyzer-ypnq.onrender.com/match-job", {
 
         method: "POST",
 
