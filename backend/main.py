@@ -28,10 +28,12 @@ initialize_database()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+   allow_origins=[
+    "https://ai-resume-analyzer-lilac-sigma.vercel.app",
+],
+allow_credentials=True,
+allow_methods=["*"],
+allow_headers=["*"],
 )
 
 UPLOAD_FOLDER = "uploads"
