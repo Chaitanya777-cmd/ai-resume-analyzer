@@ -48,7 +48,7 @@ Rules:
 
     url = (
         "https://generativelanguage.googleapis.com/v1beta/"
-        "models/gemini-2.5-flash:generateContent"
+        "models/gemini-3.5-flash:generateContent"
     )
 
     response = requests.post(
